@@ -1,0 +1,88 @@
+
+
+
+what ever setter and getter parameters we have used those parameters only we have to pass in the entire method parameters
+
+The below approach is the correct way.
+
+eg:
+
+package com.example.entity;
+
+public class StudentEntity {
+	
+	
+	private Integer studentid;
+	public String studentname;
+	public Integer studentage;
+public StudentEntity() {
+	// TODO Auto-generated constructor stub
+}
+	public StudentEntity(Integer studentid,String studentname,Integer studentname) {
+		this.studentid=studentid;
+		this.studentname=studentname;
+		this.studentage=studentname;
+		
+	
+	}
+
+	public void setStudentId(Integer studentid) {
+		this.studentid=studentid;
+	}
+	
+	public Integer getStudentId() {
+		return studentid;
+	}
+	
+	
+	
+
+}
+
+
+if we change the parameters name then we get issues when passing the data in the parameters like changing the parameters for studentId if we pass only id then we get issues.
+
+
+
+public class StudentEntity {
+	
+	
+	private Integer studentid;
+	public String studentname;
+	public Integer studentage;
+public StudentEntity() {
+	// TODO Auto-generated constructor stub
+}
+	public StudentEntity(Integer id,String name,Integer age) {
+		this.studentid=id;
+		this.studentname=name;
+		this.studentage=age;
+		
+	
+	}
+
+	public void setStudentId(Integer id) {
+		this.studentid=id;
+	}
+	
+	public Integer getStudentId() {
+		return studentid;
+	}
+	
+
+	public void setStudentName(String name) {
+		this.studentname= name;
+	}
+	
+	public String getStudentName() {
+		return studentname;
+	}
+	
+	
+	
+
+}
+
+
+
+

@@ -1,0 +1,59 @@
+snapshot version
+LTS version  ----
+milestone version
+---
+never believe the mile stone version.
+LTS supported version will be used by the industry.
+Snapshot version
+
+
+Project MetaData
+------------------------------------
+Project is belonging to that particular org,
+
+meta data --info about the project
+
+mysql---->com.mysql.jdbc.Driver
+ojbbc---->com.oracle.jdbc.Driver
+
+Group
+---------------
+com.mysql-- is called as group
+
+Artifact
+-----------------------
+application name 
+
+CI/CD--- continuous Integration/ Continous Developement.
+
+
+
+dev -->devcode--->Repository--->stage-1
+				1.compliation
+				2.Package jar/war
+
+
+				3.unit test cases
+
+Artifact Location
+---------------------------------
+Inorder to safe guard the war and jar file  we call it as artifact location we call it as JFROG,
+
+
+
+java 17 cant work on java11
+java 11 can run on java 17
+
+
+we call it as provision we use tools called terraform
+
+ansibles is a configuration tool From windows to  Linux if we want to run the code we use ansible
+
+
+Spring boot 3 onwards minimum we need java 17
+
+
+
+
+
+	

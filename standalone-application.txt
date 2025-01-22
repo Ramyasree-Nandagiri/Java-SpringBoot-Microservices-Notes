@@ -1,0 +1,22 @@
+https://www.geeksforgeeks.org/what-is-standalone-application/
+
+
+java----core java
+standalone application
+---------------------------
+
+Previously when we are developing games that is dedicated to particular system.
+
+Application which is specific to particular system.
+So these applications are developed by core java
+
+A standalone application is used when a user wants to perform any specific task on a local machine, without requirement of an Internet connection to the system.
+Desktop software , Mobile apps gaming applications are some examples where standalone applications are developed.
+
+They are dedicated to that system,
+
+p-presentation
+p-processing
+p-persisting
+
+

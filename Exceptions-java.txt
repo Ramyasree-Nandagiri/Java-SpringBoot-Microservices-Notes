@@ -1,0 +1,87 @@
+
+Jan-10-2025 harsh sir --ashok it
+------------------------
+Exception in java
+--------------------------------
+
+
+We have 2 types of exceptions
+1.checked Exception
+2.unchecked Exception
+
+Fully checked exception
+partially checked exception
+parameterized exception
+exception without parameters
+
+
+partially checked exception
+-------------------------
+Run time exception are having many implementations.
+But if we write only the super method for a class that extends RuntimeException then it is called as Partially checked exception
+ 
+Fully checked exception
+--------------------------
+
+The logic implementation of the runtime exception if we provide then it is called as a fully checked exception.
+
+like writing the code of the runtime exception and implementing our own throwable also then it is called as a fully checked exception.
+
+As a developer we have to write everything code and all for the exception we have to extend RuntimeException for a class.
+
+public class StudentException extends RuntimeException{
+}
+
+
+Checked Exception
+----------------------------
+
+checked can be handled during the compile time
+
+
+if we want to create a checked exception we have to handle the exception.
+checked exception can be handled at any cost
+
+eg:File not found exception.
+
+
+
+
+unchecked Exception
+-----------------------------
+
+unchecked exception is handled in the  runtime.
+
+
+if we use unchecked exception no need to handle. some times we handle sometimes we dont handle. If we dont handle also no issue.
+Eg:Arithmetic Exception
+
+
+Paramerized exception
+--------------------------
+
+If we want to pass some id dynamically to the exception we have to used parameterized exception.
+
+If we want to show the dynamic message for the exception we have to use parameterized exception.
+Based on what type of the exception the error message is displayed.
+
+
+public StudentException(String message) {
+		super(message);
+	}
+
+exception without parameters
+--------------------------
+
+If we dont want to pass any arguments in the exception, we have to use the exception without parameter
+This exception without parameters display the static error messages for exception
+
+
+	public StudentException() {
+		super("user not found exception");
+	}
+
+
+
+where ever user not found exception is found , we have to get 401 error . In order to get that pre-defined error our postman , we have to write 
+the @ResponseStatus(code=HttpStatus.NOT_FOUND)

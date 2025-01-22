@@ -1,0 +1,6 @@
+war file is used to deploy our project in external server.
+
+jar file consists of libraries
+
+we use this war file and in the web apps of the external  server ,
+we deploy this file and run our application.

@@ -1,0 +1,70 @@
+var obj = {
+	a: 1,
+	b: 2,
+	c: 3,
+	z: 26
+};
+write a program to give addition of all the values
+
+
+var emptyarray=[];
+
+emptyarray.push(obj);
+[{a:1},{b:2},{c:3},{z:26}];
+
+Obj.Keys
+Obj.values
+
+emptyarray.forEach((res)=>{
+let sum=0;
+sum=sum+res;
+}
+
+
+let c =Obj.Value;
+
+c=[1,2,3,26];
+
+c.for
+
+
+numbers = [1,2,3,4,5,6,7,8,9,10]	
+<ul>
+	<li>2</li>
+	<li>4</li>
+	<li>6</li>
+	...
+	...
+	...
+	...
+</ul>
+There is list variable in your component. In template, display only even numbers in unordered list.
+Anything from Angular, like ng for/if, can be used
+
+evenArray=[];
+number.forEach((res)=>{
+let d =(res/2==0);
+evenArray.push(d);
+console.log(d);
+console.log(evenArray);
+}
+
+
+<ul *ngFor="let a of evenArray">
+<li>{{a}}</li>
+</ul> 
+
+canAc
+
+var a ="Ramya";
+var duplicateArray=[];
+a.split("");
+var d=a.split("");
+d.forEach((res)=>{
+duplicateArray.indexOf(res)!=-1
+console.log(duplicateArray);
+
+
+});
+
+for(var i=0;)

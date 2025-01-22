@@ -1,0 +1,9 @@
+In order to make a java class as a spring boot package
+
+To Represent this class as a spring bean class we use @Component above a java class.
+
+The @Component is imported from import org.springframework.stereotype.Component.
+
+
+
+

@@ -1,0 +1,9 @@
+@RequestMapping
+----------------------------
+
+when ever we pass the URL we use this @RequestMapping() in the controller.
+@RequestMapping(value="/meee",method=RequestMethod.GET);
+The URI link we pass .
+
+
+

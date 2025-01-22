@@ -1,0 +1,9 @@
+Every java class should have a base package or a package inorder for it to execute.
+
+If no package is written in java class the spring boot wont compile that java file and we wont get output
+
+
+
+
+
+.

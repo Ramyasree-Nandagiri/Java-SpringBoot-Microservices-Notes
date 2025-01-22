@@ -1,0 +1,122 @@
+
+
+Response Headers
+------------------
+ what is the purpose of response headers
+
+
+you are giving some data for the sake of the client you give some values
+So that time we use Response Header
+to pass some values those may be static values 
+client--who ever consuming api
+
+it help you to carry some value additional of header . so we use HTTP header.
+
+HttpHeaders a = new HttpHaders();
+
+Http is a stateless protocol
+what it does is once request is fulfilled means request sent and response we got the http response dont have any memory in the server.
+
+what ever the conversation done between http client  and server , the http header wont remember.
+
+Again if we send any new request , we have to use the above procedure.
+
+Every time when we are hitting the server , it becomes messy and difficult to handle.
+
+Instead of depending on the server , we need to 
+
+To carry some value and to give some value from the client 
+
+Main purpose of Http header is to carry some value from req to req or client to server .
+
+To pass some value either for authentication tokens or some values we use this HTTP headers from client to server and from server to  client.
+
+
+Never ever share the security data using the HTTP Headers as they dont have any security.
+Non secure data we have to send in HTTP header .
+
+we create a microservice 
+
+
+Data when ever we want to pass from client to server or server to client we send in the HTTP body of the HTTP Request and HTTP response.
+
+The data will be in the JSON format ,XML format, non-binary data like images,files ,XML, plain text
+
+HTTP Header is in the form of the key value pair.
+
+The number of the HTTP headers that we pass depends on the size of the browser.
+Browsers: Typically 4–8 KB for all headers combined.
+
+
+In summary, while you can include many headers in HTTP requests and responses, you should be mindful of size limits and performance considerations to ensure compatibility and efficiency.
+
+We can include many HttpHeaders based on the browser limit or size in the HTTP request.
+
+
+	Eg:
+	EmployeeEntity e = dummyEmpService.postEmployeeDetails(myPostData);
+		HttpHeaders dummyheader1 = new HttpHeaders();
+		dummyheader1.add("msg", "addingheader1");
+		dummyheader1.add("msg1", "adding header 2");
+		return ResponseEntity.ok(e);
+------------------------------------------
+
+Why we need multiple headers in Http?
+
+Multiple headers are need in http request and http response in order to convey what type of information we are passing.
+
+In an HTTP request, multiple headers are used to convey a variety of information between the client and server. 
+Each header serves a specific purpose and provides metadata or instructions to influence how the request should be processed or understood.
+ Here's why multiple headers are commonly included in an HTTP request:
+
+1.Communication of client Information
+2.Authentication and Authorization
+3. Request Customization
+4.Content Specification
+5.Security and Integrity
+6.API-Specific Requirements
+
+Benefits of Multiple Headers
+-----------------------
+
+
+Modularity: Each header has a specific role, making communication clear and structured.
+Flexibility: Headers can be added or omitted based on the request's requirements.
+Compatibility:  support for different protocols, formats, or use cases.
+
+
+
+Default headers
+-----------------------------
+
+Every client request have the default  headers.
+default headers consists of the
+Content-Type
+Date
+Keep-alive
+Msg
+Transfer-Encoding
+Usercount
+
+
+
+
+HTTP Methods and Body Usage
+-----------------------------------------------
+GET:
+
+Typically, no body is sent with GET requests.
+Data is passed in the URL query string (e.g., ?name=john&age=30).
+POST:
+
+Commonly used to send data in the body.
+Example: Form submissions, API payloads, file uploads.
+PUT and PATCH:
+
+Used to update or modify resources.
+The body usually contains the updated data.
+DELETE:
+
+While less common, some implementations allow data in the body.
+
+

@@ -1,0 +1,12 @@
+1. First we have to go to the project folder in the sts
+2. then right click on the project we get properties
+3.then a dialog box is displayed wtih 1.path
+					2.Type
+					3.Location
+4.Click on the arrow sign of the location we will go  to the project where it is present
+5.Then click on the project in that specified location 
+6.right click on the project location we get properties click on show more options 
+7.open git bash here
+8.Copy the git commands from that particular project repository and then chanage git add .Readmd
+to git add .
+So that all files will be added.

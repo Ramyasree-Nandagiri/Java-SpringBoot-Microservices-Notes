@@ -1,0 +1,102 @@
+Annotations
+---------------------
+
+We have annotations in spring boot applications
+
+@springBootApplicaiton is equal to  3 annotations 
+1.@Configuration
+2.@EnableAutoConfiguration
+3.@ComponentScan.
+
+
+@Configuration
+--------------------
+
+@Configuration annotation helps in Spring Annotation Based Configuration
+This is class level annotation. To represent a java class as a Configuration class we use @Configuration.
+
+Instantiation of 
+
+Inside this class we can use bean class also.
+
+since spring 2 we are writing bean configuration in xml file. In spring 3 we can give bean definition to java file itself this is called as a Spring java Config feature.
+
+@EnableAutoConfiguration
+----------------------
+EnableAutoConfiguration tells spring boot how you want to configure Spring, Based on the jar dependencies .
+
+
+@ComponentScan
+-----------------
+It tells Spring to look for other Components,Configurations and services in the specified package.
+
+If no package is specified current class package is taken as root package.
+
+Spring boot is able to scan base package and sub packages of the base package also.
+
+
+
+@SpringBootApplication annotation is mandatory for spring boot applications.To run a spring boot an  application or main class with @SpringBootApplication is required.
+
+
+
+@RequestBody
+----------------------
+
+This annotation take the data in json format and convert the json body to java object.
+
+
+@RequestMapping
+-----------------------------
+
+@RequestMapping("/allusers")
+@RequestMapping(value="/allusers",method=RequestMethod.GET)
+
+
+CRUD OPERAIONS
+-----------------------------
+
+@GetMapping("/getUsers")
+@PostMapping("/postdataUsr");
+@PutMapping("/displayUsers");
+@PatchMapping("/patchUsers");
+@DeleteMapping("/deleteUsers");
+
+
+
+@Service
+@Controller
+@RestController
+@Autowired
+
+ResponseEntity---For Status Codes.
+
+
+@ResponseStatus
+------------
+
+@ResponseStatus(code=HttpStatus.NOT_FOUND)
+To display the pre-defined codes in our postman like 404 -user not found we have to use @ResponseStatus
+
+package com.example.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(code=HttpStatus.NOT_FOUND)
+public class StudentException extends RuntimeException{
+
+//	Exception without parameter
+//	public StudentException() {
+//		super("user not found exception");
+//	}
+	
+//	Exception with parameters
+	public StudentException(String message) {
+		super(message);
+	}
+
+
+
+
+

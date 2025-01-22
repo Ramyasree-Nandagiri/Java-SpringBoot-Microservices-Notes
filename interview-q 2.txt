@@ -1,0 +1,40 @@
+const arr = [1, -2, 3, 4, -5, 6];
+
+arr.forEach((res)=>{
+
+if(res > 0){
+let a =a+res;
+}
+else{
+console.log(res);
+}
+
+});
+
+
+setValue({"name","Ramya"},{"firstname":"Ramya"},{"lastName":"sree"});
+
+myForm= this.fb.group({
+
+name:[Validators.required,[]],
+
+})
+
+myForm.setValue({lastName:"Nandagiri"});
+
+
+ng g p myPipe
+
+"Ramya"
+
+transform(value:any){
+
+let getFirstValue =value.indexOf(0);
+
+
+
+
+
+}
+
+MergeMap("https://1","https:2","https://3")

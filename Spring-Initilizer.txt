@@ -1,0 +1,43 @@
+First we have to use spring initializer to get all the files and dependencies for the spring project.
+
+
+First in spring Initializer we have to use Maven project or Gradle project.
+
+We give the project details like project name, package name,
+
+we have two types of packages , jar and war.
+
+java version is choosen and we can generate a project.
+
+
+Spring-Initializer  will give us the following files
+
+1.pom.xml.
+2. src folder
+3.Go Into the src folder and  we have resources folder.
+
+Spring initializer is used to create a boot applications
+
+Finially we create on generate button and download that zip file
+
+We have to go to sts software and open that folder, we have to extract that folder
+That is the project we have created in spring initializer.
+
+
+In sts 
+
+we have to go to file --->import ----> existing maven projects----> browse the folder which is created using spring-initializer--->click on pom.xml ->click on finish.
+
+
+In STS we have  spring boot framework .
+
+The main starting point of our application is application.java.
+
+In resources folder we have application.properties file.
+
+we also have test file for testing the application we do unit testing Application.Tests.java
+
+
+
+
+

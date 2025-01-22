@@ -1,0 +1,31 @@
+
+https://www.h2kinfosys.com/blog/what-are-view-resolvers-in-spring/
+
+spring framework provides a way with the help of which you can work with the views.
+
+
+viewResolver is an interface in spring framework.
+
+For working with views in Spring boot we use viewResolver.
+
+Just like jsp in java , in spring boot we use viewResovler.
+
+viewResolver maps the view name to the corresponding view.
+
+There are various View Resolvers available in Spring, such as InternalResourceViewResolver, XmlViewResolver, etc.
+
+
+ViewResolver provides a mapping between view names and actual views. View addresses the preparation of data before handing over to a specific view technology.
+
+
+InternalResourceViewResolver is also the default view resolver of DispatcherServlet class, which acts as the front controller in the Spring MVC framework
+
+As controller will update the model and call respective view, this view resolver is helped in getting a path where views are located.
+
+
+Types of viewResolvers
+-----------------------------
+
+1.InternalViewResourceResolver
+2.XmlView Resolver
+3.Resource bundle view Resolver.

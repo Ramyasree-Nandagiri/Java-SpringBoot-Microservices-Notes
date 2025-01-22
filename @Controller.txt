@@ -1,0 +1,60 @@
+@Controller
+-----------------------
+@Controller should have a view
+
+The view can be HTML page.
+
+Controller used to develop a web applicaiton
+controller depends on viewResolver
+Controller does not have a response body.
+
+Controller helps to develop a web application depends on view Resolver to present the response.
+
+To present the data in the view or to display the data like a HTML page we use @Controller.
+
+
+In Controller class we write the constructor and List data type.
+
+
+public class UserController {
+
+	List<UserEntity> userDetails = new ArrayList<>();
+	
+//	Constructor
+	public UserController() {
+		userDetails.add(new UserEntity(1,"Ramya","25",1234567));
+		userDetails.add(new UserEntity(2,"priya","35",112345));
+		userDetails.add(new UserEntity(3,"salma","95",12122));
+}
+
+
+@RestContoller
+------------------------------------
+
+
+Rest controller is a combination of @controller and response body which can directly returns the data.
+
+For sharing the data we use @RestController
+The data can be in XML format , JSON format and String.
+
+Difference between @Controller and @RestController.
+
+Restapi have standard feilds.URI
+restApi what every feild we want to search we add that feild in the getMapping like id, name and address
+GraphQl is done through HTTP protocol. We attach a Query
+GraphQL we pass a Query and then search the data
+
+
+
+
+IMPORTANT THINGS TO WRITE IN CONTROLLER.
+--------------------------
+
+In @Controller and @RestController we have to call  the service method 
+ write the HttpStatus.code
+write the @RequestMapping and Crud Operations like Put ,post ,get ,delete.
+we add HttpHeaders in the controller.
+
+
+
+ 

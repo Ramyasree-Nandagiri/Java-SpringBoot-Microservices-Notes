@@ -1,0 +1,74 @@
+
+
+Consumers
+-----------------
+
+
+Produces and consumers are define what type of data we are passing in request and response wheather it is JSON or XML or string.
+
+
+Produces request media type
+Consumes response media type
+-----------------
+
+
+To define request media types we use produce.
+To define response media types we use consumes.
+
+Produces and consumes are the optional parameter passed to the RequestMapping ,ResponseMapping and PostMapping , PutMapping.
+
+
+media types are nothing but your data format . What type of data format we have to use  json, string.
+
+
+@PostMapping(value="/greet", produces="text/application", consumes=MediaType.TEXT_PLAIN_VALUE)
+
+
+consumes
+----------------------
+
+Purpose: Specifies the format in which the client must send the request body for the server to process it.
+
+
+
+@PostMapping(value = "/submit", consumes = "application/json")
+
+@PostMapping(value = "/submit", consumes = MediaType.TEXT_PLAIN_VALUE)
+
+public ResponseEntity<Void> submitData(@RequestBody MyData data) {
+    // Process the JSON data
+    return ResponseEntity.ok().build();
+}
+
+Produces 
+-------------------------------
+Purpose: Specifies the format in which the server will produce the response body.
+
+
+
+@GetMapping(value = "/example", produces = "application/json")
+public ResponseEntity<String> getExample() {
+    return ResponseEntity.ok("{ \"message\": \"Hello, world!\" }");
+}
+
+
+
+
+@PostMapping(value = "/submit", consumes = "application/json")
+public ResponseEntity<Void> submitData(@RequestBody MyData data) {
+    // Process the JSON data
+    return ResponseEntity.ok().build();
+}
+
+
+
+
+When to Use Produces and Consumes
+-----------------------------------------------
+
+API Documentation: Helps developers know the expected input and output formats.
+Error Handling: Ensures that mismatched formats trigger clear errors (e.g., 415 Unsupported Media Type).
+Interoperability: Facilitates interaction with different clients by supporting multiple formats.
+This mechanism ensures clear communication between the client and the server regarding supported content types.
+
+

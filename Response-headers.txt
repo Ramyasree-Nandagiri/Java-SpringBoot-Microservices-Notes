@@ -1,0 +1,17 @@
+
+
+Response Headers
+------------------
+ what is the purpose of response headers
+
+
+you are giving some data for the sake of the client you give some values
+So that time we use Response Header
+to pass some values those may be static values 
+client--who ever consuming api
+
+it help you to carry some value additional of header . so we use HTTP header.
+
+HttpHeaders a = new HttpHaders();
+
+

@@ -1,0 +1,12 @@
+
+
+to perform all the operations we use post man
+
+post man is a tool for all the HTTP operations like GET,POST,UPDATE,PUT,PATCH,DELETE the data
+we can insert the data using postman
+we can delete the data using postman
+we can update the data using postman
+
+Using postman we can test our APIs.
+
+A API is in a JSON format.

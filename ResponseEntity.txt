@@ -1,0 +1,56 @@
+
+
+ResponseEntity
+---------------------------
+
+Using ResponseEntity we can pass status codes
+Using ResponseEntity we can pass headers and body.
+
+ ResponseEntity is written in controller.
+-----------------------------------------------------
+In ResponseEntity second argument is the HTTP header.
+
+
+How to pass the HTTP header?
+
+Using ResponseEntity we pass the HTTP Headers.
+The HttpHeaders we pass it as a ResposeEntity.
+---------------------------------------------------
+
+
+we can write our custom status code and status message using the ResponseEntity
+---------------------------------------------------
+
+public class StudentController {
+	
+	@Autowired
+	private StudentService dummyservice;
+	
+	@GetMapping("/allStudents")
+	public ResponseEntity<List<StudentEntity>> studentsDisplay() {
+		return this.dummyservice.displayAllStudents();
+		
+				
+		List<StudentEntity> studentsdisplay = dummyservice.displayAllStudents();
+		return new ResponseEntity<List<StudentEntity>>(studentsdisplay, HttpStatus.OK);
+		
+	}
+	
+	@GetMapping("/myStatusCreated")
+	public ResponseEntity<String> myGreet(){
+		return new ResponseEntity<String>("Hello world",HttpStatus.CREATED);
+	}
+
+	
+	@GetMapping("/hello")
+	public String demo() {
+		return "Hello world";
+	}
+	
+	@GetMapping("/student/{studentid}")
+	public ResponseEntity<StudentEntity> getEachStudent(@PathVariable  Integer studentid){
+        StudentEntity student = dummyservice.getStudent(studentid);
+		return new ResponseEntity<StudentEntity>(student,HttpStatus.OK);
+	}
+	
+

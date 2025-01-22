@@ -1,0 +1,25 @@
+JDBC-Database operations
+
+ORM-JPA, Hibernate.
+
+
+struts ----web framework.
+Struts are used for Web based applicaitons
+
+
+Spring is the application frame work.
+Spring will support all types of applications.
+
+
+
+JDBC ---Operations
+-------------------------
+
+5 steps we have to write for the JDBC operations
+
+1.Register Driver (ojdbc,Mysql)->Class.forName("")
+2.Establish the Connection
+3.Statement or prepared Statement
+4.Execute the statement
+5.Closing the connection.
+

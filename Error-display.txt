@@ -1,0 +1,17 @@
+
+
+To display errors in response like postman we have to set some properties in the application.properties.
+so if we set those properties only the errors will be displayed in the postman .
+
+If we dont set those error properties in the application.properties, we dont get those errors messages in the postman. we get errors in the console.
+To display errors in the postman ,like custom errors we have mention the below two properties in the application.properties file.
+
+
+
+application.properties
+-----------------------
+we have to use 
+
+
+server.error.include-message=always
+server.error.include-exception=true

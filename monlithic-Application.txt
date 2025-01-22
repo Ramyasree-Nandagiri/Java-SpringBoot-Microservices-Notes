@@ -1,0 +1,30 @@
+MONOLITHIC APPLICATION
+-------------------------------
+
+
+No Interopabilty it becomes Monolithic application.
+
+multiple functionalities +UI + tightly coupling
+
+
+We use @Controller for monolithic application.
+
+
+
+DISTRIBUTED APPLICAITON
+-----------------------------------
+
+it is a simple web application.
+
+For distributed application we use @RestController.
+
+Interopbality with multiple functions it is called a distributed application.
+Distributed application we can use SOAP or REST.
+
+
+Distributed application is developed with single functionality it is called a MicroService.
+
+
+Microservices can be developed with SOAP or REST.
+
+Intropabilty +Single Functionality+Independent Developement this is called a MicroService.

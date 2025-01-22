@@ -1,0 +1,38 @@
+
+@SpringBootAnnotation
+------------------------
+
+
+If we want to give an autoconfiguration for the spring boot application we have to add an annotation called @SpringBootApplication.
+
+If we dont write @SpringBootApplication we have to add other 3 annotations like
+
+1.@Configuration
+2.@EnableAutoConfiguration
+3.@ComponentScan.
+
+
+
+
+@Configuration
+@EnableAutoConfiguration
+@ComponentScan
+public class MyApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(MyApplication.class, args);
+    }
+}
+
+
+@SpringBootApplication
+public class MyApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(MyApplication.class, args);
+    }
+}
+
+
+Spring boot main feature is auto configuration and dependency injection.
+

@@ -1,0 +1,86 @@
+
+
+Htpp methods consist of header and body.
+
+
+HTTP protocol consists of 4 parts: 1.HTTP header
+2.Http body
+
+
+all these data will be transferred through data packets.
+If all these POST/PUT consists of header and body.
+if data size is more the data packets also will be more and be in large size.
+
+
+GET consist of HTTP header no body
+POST consists of HTTP header and HTTP body
+we can pass data in HTTP body and insert the data.
+
+@RequestMapping(value="/saveUser", method=RequestMethod.POST)
+
+
+Before Methods what annotations we write
+--------------------------------------------
+@RequestMapping
+
+Annotations inside method declarations
+------------------------------------
+Inside method declaration we write few annotations like 
+@RequestBody
+@RequestParam
+@PathVariable
+
+
+
+we have different methods for the HTTP
+1.Insert
+2.delete
+3.update
+4.put
+5.patch
+
+patch 
+-----------------
+patch will update a single value
+we have to mention which value will be updated  in the postman, either name or id
+In postman we have to give either name or id
+
+{
+"username":"ramya";
+}
+
+put
+--------------------
+
+put will modify entire record. For put we have to give the JSON record
+In postman we have to pass the entire json record.
+{
+
+"username":"Ramya",
+"id":1,
+"age":25,
+"email":"ramyasree"
+
+}
+
+
+Delete
+----------------
+For delete also what have to pass a single value in postman.
+In Postman we have to pass a single value, if we pass either username or id , then entire record will be deleted.
+
+	@RequestMapping(value="/deleteuser/{username}",method=RequestMethod.DELETE)
+public String deleteUser(@PathVariable String username) {
+	
+	UserEntity b = userDetails.stream().filter(response->response.getusername().equals(username)).findFirst().orElseThrow(()-> new RuntimeException("user not found"));
+	userDetails.remove(b);
+	return username;
+	
+}
+
+Precise Request mapping
+-------------------------------
+
+
+--------------------------
+When we write @RequestBody then only we have to send the body in the postman, otherwise we can send only the parameters.

@@ -1,0 +1,8 @@
+
+Constructor
+------------------------
+
+when ever we create a object for a class, it automatically calls the constructor.
+so Object creation is must to call a constructor.
+
+we dont create a object for a constructor, by default the whenever we create a object for a class that calls the constructor.

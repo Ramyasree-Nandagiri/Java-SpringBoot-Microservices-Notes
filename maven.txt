@@ -1,0 +1,24 @@
+In maven is a structure oriented way.
+No custom writing.
+Most of the 95% application we use maven
+
+complex applications go to gradel.
+custom execution is done in gradel
+When we use gradel , only 5% use gradel.
+
+
+To automate the build process we use maven or gradel.
+
+
+maven --pom.xml
+gradel--build.gradle.
+
+
+SpringBoot project
+---------------------------
+
+Spring web initializer
+
+
+we have to download the maven . and extract and then install 
+

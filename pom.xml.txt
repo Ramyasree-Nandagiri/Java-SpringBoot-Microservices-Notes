@@ -1,0 +1,15 @@
+In maven we have pom.xml
+
+
+Dependencies are present in pom.xml.
+
+
+pom.xml and build.gradel we call it as Build descriptors
+maven is a build tool 
+mvn maven version 
+
+
+mvn --version
+
+
+

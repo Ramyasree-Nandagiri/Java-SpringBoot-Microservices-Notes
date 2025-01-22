@@ -1,0 +1,144 @@
+JDBC---
+
+we are going to perform some data base operations
+
+servlets and JSP  are developed and we can develop web based applications
+
+
+5 standarad steps for JDBC---
+
+1.JDBC is depending on the database, if the database is changed we have to write again 
+
+Transactions are important for interview .
+Transaction management are important .
+
+ORM--object relational mapping
+---------------------
+it will take care of data base operation, we have to write only java program.
+
+Every table in database is represented in ORM. object.
+
+
+ORM is of 
+JPA,
+Hibernate
+
+Struts web Framework
+--------------------------
+
+
+Eg: Nokia
+nokia have Microsoft org tie up.
+
+Spring is application framework supports all types applicaitons
+struts will support  web application framework.
+
+
+Spring is developed in AI also.
+Spring will develop a meaningful application, 
+
+If we just know the core java , we can develop the spring based application.
+
+
+
+when we work on servlets and JSP we follow MVC pattern.
+
+Spring Boot
+--------------------
+
+difference between spring and spring boot
+
+
+
+Microservice is a architecture
+-------------------------------
+It is not a technology,
+
+Spring Boot will have embedded server and auto configuration
+Spring people introduced spring boot on the top of spring
+Spring boot acts as a wrapper on the top of the spring.
+
+
+Spring vs Spring Boot
+-----------------------------
+
+1. spring is used to develop web application and MVC  type Application.
+
+2. IOC container and dependency Injection are the features of Spring.
+
+3. External server is used to deploy the application.
+
+EG:Tomcat 
+
+Spring Boot
+------------------
+
+1.Spring Boot we use REST api.
+
+2.Auto Configuration is the primary feature of spring boot application.
+
+3.Spring boot itself consists of embedded server, we can also have an external server also when we use spring boot
+
+4.No need of external server in spring boot
+
+5.Using spring boot we can develop Microservices kind of application eg: REST API.
+
+
+can we develop a microservices using spring ? only spring boot is used to develop microservices.?
+
+
+java will run on java servers like tomcat
+
+jdk for developer purpose.
+
+ 1st module in spring is core module.
+ core module
+--------------------
+
+easy to text,
+----------------------------
+
+
+
+
+@Controller
+@SpringBootApplication
+@EnableAutoConfiguration
+
+
+
+IOC---if we write a prgm , we need object, so inorder to covert the object , it specifies the sources for that object.
+
+
+
+service oriented
+
+1.bean
+2.Applicaiton Context
+
+
+Dependency Injection
+---------------------------
+1.
+Arpita call agindi
+
+
+Inversion of Control
+----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

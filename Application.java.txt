@@ -1,0 +1,34 @@
+Applicatio.java is the main file to run the spring boot application.
+
+If we comment the SpringApplication.run, the entire spring boot application wont run, we get terminated error.
+
+
+run method contains some logic that will bootstrap the  spring application.
+
+we can see the logic for the run method, by clicking on the control key.
+
+
+In spring boot we mostly dont write logic ,we use IOC container.
+
+In IOC container we use createApplicationContext();
+context = createApplicationContext();
+
+
+if we are developing a project using spring boot frame work we need to start the IOC container, 
+
+IOC container getting started by the run method, when we use the run method and start the application.
+
+
+open CreateApplicationContext.
+
+bean factory and Application context both are used to start the IOC container.
+
+spring boot starter is used.
+
+In Spring boot we have application runners and 
+
+
+
+
+
+

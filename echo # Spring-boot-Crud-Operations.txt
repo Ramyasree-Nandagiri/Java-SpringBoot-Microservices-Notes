@@ -1,0 +1,17 @@
+echo "# Spring-boot-Crud-Operations" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Ramyasree-Nandagiri/Spring-boot-Crud-Operations.git
+git push -u origin main
+
+
+
+echo "# spring-boot-9thjan-requestparam-2025" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Ramyasree-Nandagiri/spring-boot-9thjan-requestparam-2025.git
+git push -u origin main

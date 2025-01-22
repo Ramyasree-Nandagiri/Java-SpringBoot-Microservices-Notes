@@ -1,0 +1,5 @@
+IOC
+----------------
+
+
+IOC called  is the inversion of control.

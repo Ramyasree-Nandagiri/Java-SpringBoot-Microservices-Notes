@@ -1,0 +1,36 @@
+
+
+To develop distributed applications we use either SOAP or REST
+
+Two systems communicate with each other with different  of their programming language is called Interop ability.
+
+java system should be able to communicate with .net system
+
+both cant communicate inorder to communicate with each other, they convert the java application or object to XML and send to .net application.
+This .net application will read that XML file .
+
+Converting a java object to XML file is called Marshelling
+Converting from XML file to java object is called unmarshelling.
+
+Interopability can be achieved using XML.
+
+ 
+SOAP is a protocol
+
+REST is a architecture based.
+
+Most of the distributed applications are developed using REST protocol as REST is easy to implement and SOAP is protocol based architecture.
+Distributed applications are developed using webservices.
+
+
+SOAP is difficult to implement
+
+REST will never ask to data format, how to present the data will be in developer data
+return the data in string format he can
+return the data in json format he can 
+return the data in XML format he can
+The developer can return or send the data in any type of data how we architect the data that is in developer hand.
+so REST is architecture based.
+
+
+

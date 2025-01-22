@@ -1,0 +1,12 @@
+Custom Auto Configuration
+----------------------
+
+In order to create a custom auto configuration we need to create a class annotated as @Configuration and register it.
+
+@Configuration
+public class demo{
+
+} 
+
+
+@Configuration is a class level annotation.

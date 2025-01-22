@@ -1,0 +1,4 @@
+It should be interopbility+ independent deplyoment+ single functionality.
+Microservice is also a distributed application
+Micorservice can be developed using SOAP and REST
+ 

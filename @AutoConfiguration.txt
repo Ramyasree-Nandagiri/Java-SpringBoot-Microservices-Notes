@@ -1,0 +1,88 @@
+AutoConfiguration
+--------------------
+
+Auto-Configuration is the main focus of the Spring Boot development.
+
+The annotation @EnableAutoConfiguration is used to enable the auto-configuration feature.
+
+
+However, we use @SpringBootApplication annotation instead of using @EnableAutoConfiguration.
+
+Spring Boot auto-configuration attempts to automatically configure your Spring application based on the jar dependencies that you have added.
+
+
+Our Spring application needs a respective set of dependencies to work.
+Spring Boot auto-configures a pre-set of the required dependencies without a need to configure them manually.
+
+This greatly helps and can be seen when we want to create a stand-alone application.
+
+When we build our application, Spring Boot looks after our dependencies and configures both the underlying Spring Framework and required jar dependencies (third-party libraries ) on the classpath according to our project built.
+
+It helps us to avoid errors like mismatches or incompatible versions of different libraries.
+
+If you want to override these defaults, you can override them after initialization.
+
+Spring Boot - Auto-configuration - GeeksforGeeksIn Spring Boot, the @EnableAutoConfiguration annotation is used to enable the auto-configuration feature, which is a key part of Spring Boot development. Auto-configuration is a feature that 
+
+Starters, such as spring-boot-starter-web or spring-boot-starter-jersey, are key players in auto-configuration.
+
+
+This annotation tells Spring Boot to start adding beans based on classpath settings, other beans, and various property settings. It enables the automatic configuration feature of Spring Boot, which sets up your application based on the dependencies present on your classpath. 
+
+DEFAULT DEPENDENCY
+---------------------------------
+default dependency in pom.xml is starter Parent dependency
+
+Spring boot Auto-Configuration
+---------------------------
+
+spring boot auto-configuration attempts to automatically configure your spring application
+
+
+
+Why we need Spring Boot Auto Configuration
+-------------------------
+
+
+When we use Spring MVC, we need to configure
+1.ComponentSac
+2.Dispatcher Servlet
+3.View Resolver
+4.web jars
+
+When we use Hibernate/JPA
+1. Data source
+2.entity manager factory/session factory
+3.Transaction manager
+
+
+so when we use spring boot framework we no need to configure 
+any such things spring not will take care of all the things
+
+
+You need to opt-in to auto-configuration by adding the @EnableAutoConfiguration or @SpringBootApplication annotations to one of your @Configuration classes.
+
+
+
+
+
+Normal Spring application
+-----------------------
+
+In normal spring application 
+
+Disable AutoConfiguration
+---------------------
+
+we can also disable autoconfiguration  for a particular class by using the 
+
+Spring Boot auto-configures a pre-set of the required dependencies without a need to configure them manually.
+
+
+For example, if the H2 database Jar is present in the classpath and we have not configured any beans related to the database manually, the Spring Boot's auto-configuration feature automatically configures it in the project.
+
+Spring Boot auto-configuration is a feature that automatically configures a Spring application based on the dependencies in the classpath. It aims to simplify the configuration process and reduce the need for boilerplate code. 
+
+@SpringBootApplication=@ComponentScan+@EnableAutoConfiguration+@Configuration
+
+

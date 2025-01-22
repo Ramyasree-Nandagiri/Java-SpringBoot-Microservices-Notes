@@ -1,0 +1,23 @@
+@Configuration
+--------------------------------
+
+@Configuration is a class level annotation
+
+when ever we use @Configuration we use @Bean
+
+@Bean is a method level annotation
+
+Even if we dont write @Configuration annotation and write bean , the application will run but will give multiple instances.
+
+
+@Configuration annotation which indicates that the class has @Bean definition methods. 
+
+@Configuration annotation indicates that the class has @Bean definition methods
+
+@Bean is an entity class.
+An entity class have setters and getters and constructor.
+
+
+@Bean annotation initializes a new object In the IOC container.
+
+   

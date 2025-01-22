@@ -1,0 +1,19 @@
+@Repository
+---------------------------
+
+The @Repository annotation is used to interact with different databases, such as NoSQL databases and relational databases. 
+
+Also, when a Java class is marked with @Repository annotation, Spring Boot automatically creates and adds the required context.
+
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+    User findByUsername(String username);
+}
+
+
+@Repository is used when ever we create a dummy package repository and add the details.
+
+com.examaple.repository is the package we have created.
+
+and inside the package we have added the java class called myRespostiry class

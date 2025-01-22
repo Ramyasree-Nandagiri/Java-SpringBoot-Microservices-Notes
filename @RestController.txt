@@ -1,0 +1,37 @@
+@RestController 
+----------------------------------
+
+@RestController will follow the REST Architecture.
+
+
+
+@RestController will have @Controller + Response Body
+
+@RestController will return data.
+The data will be in String format or any data.
+
+
+
+
+we can have interopability as it follows REST Architecuture
+
+we have embedded server as we are using spring boot as spring boot consists of embedded server.
+Single functionality
+
+Interopability + Independent Deployment+ Single Functionality
+ It is called a micro server
+
+As a developer if we write only 
+
+
+Interopability + Independent Deployment+ Multiple Functionality
+ It is called a REST API
+
+If we dont have Interopability we call it as Monolithic application.
+
+
+
+
+
+
+

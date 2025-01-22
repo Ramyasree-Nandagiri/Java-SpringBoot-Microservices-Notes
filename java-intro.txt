@@ -1,0 +1,208 @@
+Introduction to SpringBoot
+Features and benefits of Spring Boot
+Create first spring boot application -Create Build and Run
+Adding -additional Dependencies like devtools,actuator
+Views- using Thymleaf
+Views- using JSP
+SpringBoot application using Database access
+SpringBoot application running on external server
+
+------------------------------------------------
+
+Spring Boot is a framework
+
+Starter Modules
+-------------------------
+Different jar the application is dependent on.
+We have to find out the jar and download into the 
+In spring boot we can create a production-grade application.
+
+Most spring boot application need very little spring configuration.
+
+
+Spring boot please dont compare it to docker
+
+XML free development. No need to write XML files
+like XML free 
+
+
+Spring boot is not an alternative to many core spring functionalities
+
+
+Spring boot Features
+-------------------
+
+Create stand alone spring applications
+Provides Opinionated started POMs to simplify your Maven configuration
+Provide Production-ready Features such as metrics and externalized configuration
+Absolutely no code generation and no requirement for XML configuration.
+Using spring Boot
+---------------
+
+Spring will need to rely on build systems like Maven or Gradle.
+
+Starter modules will be added.
+
+Starters are a set of convenient dependency that you can include in your project.
+
+
+
+
+Capabilities of spring Boot
+----------------------------
+
+It offers a fast way to build applications.
+It offers less on infrastructure.
+We have to configure TOMCAT or JETTY .
+TOMCAT will be used as a server.
+Initially we use a TOMCAT not JETTY.
+
+
+Spring boot doesn't generate code or make edits  to your file .
+Instead when you start up your application , Spring boot dynamically wires up beans and settings and applies them to your application context.
+
+
+Application Context is a container.
+We have to provide the POJO's .
+we have 20 different ways of configuration applications, One of them is an externalized configuration.
+
+configuration info some where like GitHub 
+our application acts like configuration client and server acts like configuration server.
+
+
+Gradel---supports multiple languages
+
+Maven vs Gradel
+
+if we use Maven as a build system we have to use pom.xml
+
+if we use Gradel as a build system we have a file called as bit.gradel which will have all the dependencies
+
+Gradel has so many features which maven dont support.
+we can write scripts in Gradel and in maven we cant write scripts.
+we can use maven in place as a Gradel
+Both are alternatives.
+
+Prerequisite for spring boot
+----------------------------
+1. JDK--->1.8 or open JDK also OK with either 10 or 11
+2. STS IDE https://Spring
+Spring Tools 4 for Eclipse
+
+
+In java who manages memory---memory management is not of spring boot framework.
+
+Creating a spring boot application
+---------------------------------------
+
+1.jdk-->1.8
+2.STS TDE-https://spring.io/tools
+Download ->double click->extracted to folder->click on .exe to launch the STS->Create a short cut icon on the desktop
+
+3.Spring initializer
+
+Spring initializr, is used for creating a project. we are not creating a project in 
+Spring we are creating a project in Spring Initializr which is provided in https://start.spring.io/
+
+Different Artifact and different name should be there in the project.
+
+Extract the downloaded project zip file and import it as Maven project in STS IDE
+
+Go to STS
+in STS --->go to file
+Imports 
+click on existing Maven projects
+click on finish 
+
+
+Spring boot will add all the dependencies by itself , we dont need to add dependencies manually.
+
+
+
+web.xml
+---------------------
+
+In web.xml we configure the dispatcher servlet.
+
+1.spring boot will give us auto configurations.
+
+2.spring boot starters will have different dependencies.
+
+eg: Spring boot starter email consists of all the libraries that are required for the email application
+
+3.Embedded servers
+--------------
+before spring boot we need to add servers to the application and run the servers.
+eg: Tomcat what version we need to install.
+
+4.CLI
+--------
+Spring boot also runs in CLI.
+
+5.Spring boot actuators
+-----------------
+Application different modules how to run 
+
+How well our application is running we can see in spring boot application.
+
+
+
+Software setup for spring boot
+---------------------------------
+spring boot projects maximum companies will use STS only.
+
+1,JDK
+2,STS---spring tool suit
+3,DataBase softwares.
+4,Postman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
