@@ -1,0 +1,20 @@
+
+@Sevice
+----------------------
+
+@Service is used for the business logic.
+
+common business logic is written 
+
+
+Business logic we write in the service  to  maintain re-usability.
+
+
+In controller we call the methods in the service.
+We use dependency Injection in the controller and call that service methods.
+
+@PathVariable,@RequestBody  we dont write in service.
+In service we write exception handling code and logic
+
+
+For put we have to pass the entire request body.
